@@ -37,23 +37,9 @@ export default function Footer() {
                     >
                         <i className="fa fa-soundcloud"></i>
                     </a>
-                    <a
-                        href="https://www.linkedin.com/in/nikohoffren"
-                        target="{blank}"
-                    >
-                        <i className="fa fa-linkedin"></i>
-                    </a>
-                    <a
-                        href="https://www.github.com/nikohoffren"
-                        target="{blank}"
-                    >
-                        <i className="fa fa-github"></i>
-                    </a>
                 </div>
 
                 <p className="white">
-                    niko.hoffren@gmail.com
-                    <br />
                     nikohoffrenmusic@gmail.com
                 </p>
 
