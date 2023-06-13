@@ -217,6 +217,7 @@ hr {
   position: fixed;
   opacity: 0.88;
   margin-top: 0.5rem;
+  z-index: 1;
 }
 
 nav img {
@@ -684,8 +685,13 @@ h3 {
 
 @media (max-width: 500px) {
   .icons {
-      max-width: 200px;
+      max-width: 150px;
       margin: auto;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+  }
+  .small-padding-bottom {
+      padding-bottom: 3rem;
   }
 }
 

@@ -39,11 +39,11 @@ export default function Footer() {
                     </a>
                 </div>
 
-                <p className="white">
+                <p className="white small-padding-bottom">
                     nikohoffrenmusic@gmail.com
                 </p>
 
-                <div className="center">
+                <div className="center small-padding-bottom">
                     <p className="arial white">
                         {language === "en"
                             ? "Copyright © 2020-2023 Niko Hoffrén"
