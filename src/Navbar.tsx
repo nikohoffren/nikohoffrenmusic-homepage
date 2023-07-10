@@ -25,7 +25,7 @@ export default function Navbar({ theme, toggleTheme }: NavbarProps) {
     };
 
     return (
-        <nav className="bg-black py-2 px-4 shadow-lg">
+        <nav className="bg-black py-2 px-4 shadow-lg fixed top-0 left-0 w-full z-10">
             <div className="flex items-center justify-between">
                 <CustomLink to="/" className="">
                     <img
@@ -95,7 +95,7 @@ export default function Navbar({ theme, toggleTheme }: NavbarProps) {
                 <li className="hidden sm:block">
                     <CustomLink
                         to="/music"
-                        className="text-lg hover:text-purple-300 mx-4"
+                        className="text-lg hover:text-purple-300 mx-12"
                     >
                         {language === "en" ? "MUSIC" : "MUSIIKKI"}
                     </CustomLink>
@@ -103,7 +103,7 @@ export default function Navbar({ theme, toggleTheme }: NavbarProps) {
                 <li className="hidden sm:block">
                     <CustomLink
                         to="/videos"
-                        className="text-lg hover:text-purple-300 mx-2"
+                        className="text-lg hover:text-purple-300 mx-12"
                     >
                         {language === "en" ? "VIDEOS" : "VIDEOT"}
                     </CustomLink>
@@ -111,12 +111,12 @@ export default function Navbar({ theme, toggleTheme }: NavbarProps) {
                 <li className="hidden sm:block">
                     <CustomLink
                         to="/gear"
-                        className="text-lg hover:text-purple-300 mx-4"
+                        className="text-lg hover:text-purple-300 mx-12"
                     >
                         {language === "en" ? "GEAR" : "SOITTIMET"}
                     </CustomLink>
                 </li>
-                <li className="hidden sm:block">
+                <li className="hidden sm:block mx-12">
                     <LanguageSelector setLanguage={setLanguage} />
                 </li>
             </ul>

@@ -57,6 +57,7 @@ export default function Videos() {
 
     return (
         <>
+            <div className="py-10" />
             <section className="videos bg-gray-50 py-8 px-4">
                 <div className="extra-margin-top" />
                 <h1 className="text-4xl font-bold mb-8 text-center">

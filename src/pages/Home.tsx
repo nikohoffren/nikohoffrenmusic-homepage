@@ -131,9 +131,16 @@ export default function Home() {
 
     return (
         <>
-            <img src="NHlogo.jpg" alt="" />
+            <div className="py-10" />
+            <div className="bg-black w-full flex justify-center items-center">
+                <img
+                    style={{ width: "900px" }}
+                    src="NHlogoTransparent.png"
+                    alt=""
+                />
+            </div>
+
             <section className="music bg-gray-50 py-12 px-4">
-                <div className="extra-margin-top" />
                 <h1 className="text-4xl font-bold mb-8 text-center">
                     {language === "en" ? "Latest tracks" : "Uusimmat kappaleet"}
                 </h1>
