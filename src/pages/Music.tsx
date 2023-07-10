@@ -1,5 +1,6 @@
-import React, { useContext } from "react";
-import { LanguageContext } from "../LanguageContext";
+import { useContext, useState } from "react";
+import { RefreshIcon } from "@heroicons/react/outline";
+import { LanguageContext } from "src/LanguageContext";
 
 interface CardProps {
     href: string;
@@ -10,13 +11,27 @@ interface CardProps {
 }
 
 const Card: React.FC<CardProps> = ({ href, src, alt, title, label }) => {
+    const [isLoading, setIsLoading] = useState(true);
+
+    const imageLoaded = () => {
+        setIsLoading(false);
+    };
+
+    const loader = (
+        <div className="flex items-center justify-center h-full">
+            <RefreshIcon className="animate-spin h-8 w-8 text-gray-500" />
+        </div>
+    );
+
     return (
         <div className="max-w-sm rounded overflow-hidden shadow-lg m-4 w-64">
             <a href={href} target="_blank" rel="noreferrer">
+                {isLoading && loader}
                 <img
                     src={src}
                     alt={alt}
                     className="w-full h-64 object-cover"
+                    onLoad={imageLoaded}
                 />
             </a>
             <div className="px-6 py-4">
@@ -26,7 +41,6 @@ const Card: React.FC<CardProps> = ({ href, src, alt, title, label }) => {
         </div>
     );
 };
-
 
 const musicData = [
     {

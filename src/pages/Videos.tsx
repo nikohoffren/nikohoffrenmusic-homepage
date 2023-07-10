@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
 import { LanguageContext } from "../LanguageContext";
-import { RefreshIcon } from '@heroicons/react/outline'
+import { RefreshIcon } from "@heroicons/react/outline";
 
 interface VideoProps {
     src: string;
@@ -15,7 +15,7 @@ const Video: React.FC<VideoProps> = ({ src }) => {
 
     const loader = (
         <div className="flex items-center justify-center h-full">
-            <RefreshIcon className="animate-spin h-8 w-8 text-gray-500"/>
+            <RefreshIcon className="animate-spin h-8 w-8 text-gray-500" />
         </div>
     );
 
@@ -28,7 +28,6 @@ const Video: React.FC<VideoProps> = ({ src }) => {
                 height="315"
                 src={src}
                 title="YouTube video player"
-                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
             ></iframe>
@@ -56,12 +55,13 @@ export default function Videos() {
         "https://www.youtube.com/embed/v5FRxNfK7kE",
     ];
 
-
     return (
         <>
             <section className="videos bg-gray-50 py-8 px-4">
                 <div className="extra-margin-top" />
-                <h1 className="text-4xl font-bold mb-8 text-center">{language === "en" ? "VIDEOS" : "VIDEOT"}</h1>
+                <h1 className="text-4xl font-bold mb-8 text-center">
+                    {language === "en" ? "VIDEOS" : "VIDEOT"}
+                </h1>
 
                 <div className="flex flex-wrap justify-center">
                     {videos.map((videoSrc) => (
@@ -72,5 +72,3 @@ export default function Videos() {
         </>
     );
 }
-
-

@@ -49,7 +49,16 @@ export default function Footer() {
             </div>
 
             <p className="text-center mb-4">nikohoffrenmusic@gmail.com</p>
-            <p className="text-center mb-4">Software Development: <a href="https://nikohoffren.com" className="hover:text-red-400 text-red-500" target="blank">nikohoffren.com</a></p>
+            <p className="text-center mb-4">
+                Software Development:{" "}
+                <a
+                    href="https://nikohoffren.com"
+                    className="hover:text-red-400 text-red-500"
+                    target="blank"
+                >
+                    nikohoffren.com
+                </a>
+            </p>
 
             <div className="text-center">
                 <p>
