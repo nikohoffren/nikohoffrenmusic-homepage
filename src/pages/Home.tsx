@@ -1,4 +1,3 @@
-import "../dark-theme.css";
 
 export default function Home() {
     return (

@@ -6,7 +6,7 @@ import Videos from "./pages/Videos";
 import Gear from "./pages/Gear";
 import { Route, Routes } from "react-router-dom";
 import Footer from "./pages/Footer";
-import "./index.css";
+import './tailwind.css'
 import { LanguageContext } from "src/LanguageContext";
 
 function App() {

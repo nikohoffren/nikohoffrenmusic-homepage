@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
 import { LanguageContext } from "../LanguageContext";
-import "../dark-theme.css";
+import { RefreshIcon } from '@heroicons/react/outline'
 
 interface VideoProps {
     src: string;
@@ -13,10 +13,14 @@ const Video: React.FC<VideoProps> = ({ src }) => {
         setIsLoading(false);
     };
 
-    const loader = <div>Loading...</div>;
+    const loader = (
+        <div className="flex items-center justify-center h-full">
+            <RefreshIcon className="animate-spin h-8 w-8 text-gray-500"/>
+        </div>
+    );
 
     return (
-        <div className="videos-col skeleton">
+        <div className="videos-col max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden m-3 md:max-w-2xl">
             {isLoading && loader}
             <iframe
                 onLoad={iframeLoaded}
@@ -52,13 +56,14 @@ export default function Videos() {
         "https://www.youtube.com/embed/v5FRxNfK7kE",
     ];
 
+
     return (
         <>
-            <section className="videos">
+            <section className="videos bg-gray-50 py-8 px-4">
                 <div className="extra-margin-top" />
-                <h1>{language === "en" ? "VIDEOS" : "VIDEOT"}</h1>
+                <h1 className="text-4xl font-bold mb-8 text-center">{language === "en" ? "VIDEOS" : "VIDEOT"}</h1>
 
-                <div className="videos-row">
+                <div className="flex flex-wrap justify-center">
                     {videos.map((videoSrc) => (
                         <Video key={videoSrc} src={videoSrc} />
                     ))}
@@ -67,3 +72,5 @@ export default function Videos() {
         </>
     );
 }
+
+
