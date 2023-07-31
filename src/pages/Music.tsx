@@ -44,6 +44,13 @@ const Card: React.FC<CardProps> = ({ href, src, alt, title, label }) => {
 
 const musicData = [
     {
+        href: "https://www.beatport.com/release/till-the-very-end/4214448",
+        src: "TTVEimage.jpg",
+        alt: "Till The Very End",
+        title: "TILL THE VERY END",
+        label: "Monster Tunes, 2023",
+    },
+    {
         href: "https://www.beatport.com/release/mystery-adoel-smidt-remix/3588760",
         src: "ASMysteryimage.jpg",
         alt: "Mystery feat. Maya",

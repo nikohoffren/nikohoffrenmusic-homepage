@@ -44,6 +44,13 @@ const Card: React.FC<CardProps> = ({ href, src, alt, title, label }) => {
 
 const musicData = [
     {
+        href: "https://www.beatport.com/release/till-the-very-end/4214448",
+        src: "TTVEimage.jpg",
+        alt: "Till The Very End",
+        title: "TILL THE VERY END",
+        label: "Monster Tunes, 2023",
+    },
+    {
         href: "https://www.beatport.com/release/mystery-adoel-smidt-remix/3588760",
         src: "ASMysteryimage.jpg",
         alt: "Mystery feat. Maya",
@@ -76,13 +83,6 @@ const musicData = [
         src: "ISYFimage.png",
         alt: "GARETH EMERY - I SAW YOUR FACE (Niko Hoffrén Remix)",
         title: "GARETH EMERY - I SAW YOUR FACE (Niko Hoffrén Remix)",
-        label: "Niko Hoffrén Music, 2021",
-    },
-    {
-        href: "https://distrokid.com/hyperfollow/nikohoffrn/encryption-original-mix",
-        src: "EncIMAGE.jpg",
-        alt: "ENCRYPTION",
-        title: "ENCRYPTION",
         label: "Niko Hoffrén Music, 2021",
     },
 ];
