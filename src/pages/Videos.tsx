@@ -39,6 +39,7 @@ export default function Videos() {
     const { language } = useContext(LanguageContext);
 
     const videos = [
+        "https://www.youtube.com/embed/ZXABlRk-PXI",
         "https://www.youtube.com/embed/mA1mjCzKDKU",
         "https://www.youtube.com/embed/h81OYCLoXIY",
         "https://www.youtube.com/embed/Nkt2_k8jz28",
