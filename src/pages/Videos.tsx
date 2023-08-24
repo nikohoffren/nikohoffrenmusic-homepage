@@ -55,7 +55,7 @@ export default function Videos() {
         "https://www.youtube.com/embed/s1NTu6Ft30c",
         "https://www.youtube.com/embed/v5FRxNfK7kE",
     ];
-
+    
     return (
         <>
             <div className="py-10" />
