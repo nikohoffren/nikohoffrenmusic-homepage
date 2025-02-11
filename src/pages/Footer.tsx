@@ -63,8 +63,8 @@ export default function Footer() {
             <div className="text-center">
                 <p>
                     {language === "en"
-                        ? "Copyright © 2020-2023 Niko Hoffrén"
-                        : "Tekijänoikeus © 2020-2023 Niko Hoffrén"}
+                        ? "Copyright © 2020-2025 Niko Hoffrén"
+                        : "Tekijänoikeus © 2020-2025 Niko Hoffrén"}
                     <br />
                     {language === "en" ? "Coded with React " : "React "}
                     <a
