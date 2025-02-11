@@ -43,48 +43,48 @@ const Card: React.FC<CardProps> = ({ href, src, alt, title, label }) => {
 };
 
 const musicData = [
-    {
-        href: "https://www.beatport.com/release/till-the-very-end/4214448",
-        src: "TTVEimage.jpg",
-        alt: "Till The Very End",
-        title: "TILL THE VERY END",
-        label: "Monster Tunes, 2023",
-    },
-    {
-        href: "https://www.beatport.com/release/mystery-adoel-smidt-remix/3588760",
-        src: "ASMysteryimage.jpg",
-        alt: "Mystery feat. Maya",
-        title: "MYSTERY feat. Maya\n(Adoel Smidt Remix)",
-        label: "Yeiskomp Records, 2022",
-    },
-    {
-        href: "https://ffm.to/zone_6-nv012",
-        src: "ZONE6image.jpg",
-        alt: "ZONE 6 (Adoel Smidt Remix)",
-        title: "ZONE 6 (Adoel Smidt Remix)",
-        label: "Neostatics Vision, 2021",
-    },
-    {
-        href: "https://distrokid.com/hyperfollow/nikohoffrn/underground",
-        src: "UndergroundIMAGE.png",
-        alt: " UNDERGROUND",
-        title: " UNDERGROUND",
-        label: "Niko Hoffrén Music, 2021",
-    },
-    {
-        href: "https://AlvedaMusic.lnk.to/Singularity",
-        src: "SINimage.jpg",
-        alt: "SINGULARITY feat. Jasmine Dean",
-        title: "SINGULARITY feat. Jasmine Dean",
-        label: "Alveda Music, 2021",
-    },
-    {
-        href: "https://soundcloud.com/nikohoffren/gareth-emery-i-saw-your-face-niko-hoffren-remix",
-        src: "ISYFimage.png",
-        alt: "GARETH EMERY - I SAW YOUR FACE (Niko Hoffrén Remix)",
-        title: "GARETH EMERY - I SAW YOUR FACE (Niko Hoffrén Remix)",
-        label: "Niko Hoffrén Music, 2021",
-    },
+  {
+    href: "https://youtube.com/playlist?list=OLAK5uy_lsACttOsC4qdlN_LPw942LO6KxTzLQl3c&si=YWTdlizL-90dRfC4",
+    src: "OlymposImage.jpg",
+    alt: "OLYMPOS",
+    title: "OLYMPOS",
+    label: "Forsaken Gods, 2024",
+  },
+  {
+    href: "https://www.beatport.com/release/till-the-very-end/4214448",
+    src: "TTVEimage.jpg",
+    alt: "Till The Very End",
+    title: "TILL THE VERY END",
+    label: "Monster Tunes, 2023",
+  },
+  {
+    href: "https://www.beatport.com/release/mystery-adoel-smidt-remix/3588760",
+    src: "ASMysteryimage.jpg",
+    alt: "Mystery feat. Maya",
+    title: "MYSTERY feat. Maya\n(Adoel Smidt Remix)",
+    label: "Yeiskomp Records, 2022",
+  },
+  {
+    href: "https://ffm.to/zone_6-nv012",
+    src: "ZONE6image.jpg",
+    alt: "ZONE 6 (Adoel Smidt Remix)",
+    title: "ZONE 6 (Adoel Smidt Remix)",
+    label: "Neostatics Vision, 2021",
+  },
+  {
+    href: "https://distrokid.com/hyperfollow/nikohoffrn/underground",
+    src: "UndergroundIMAGE.png",
+    alt: " UNDERGROUND",
+    title: " UNDERGROUND",
+    label: "Niko Hoffrén Music, 2021",
+  },
+  {
+    href: "https://AlvedaMusic.lnk.to/Singularity",
+    src: "SINimage.jpg",
+    alt: "SINGULARITY feat. Jasmine Dean",
+    title: "SINGULARITY feat. Jasmine Dean",
+    label: "Alveda Music, 2021",
+  },
 ];
 
 interface VideoProps {
@@ -124,9 +124,9 @@ export default function Home() {
     const { language } = useContext(LanguageContext);
 
     const videos = [
+        "https://www.youtube.com/embed/videoseries?si=YWTdlizL-90dRfC4&amp;list=OLAK5uy_lsACttOsC4qdlN_LPw942LO6KxTzLQl3c",
         "https://www.youtube.com/embed/ZXABlRk-PXI",
         "https://www.youtube.com/embed/mA1mjCzKDKU",
-        "https://www.youtube.com/embed/Nkt2_k8jz28",
     ];
 
     return (

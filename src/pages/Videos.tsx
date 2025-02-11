@@ -39,6 +39,7 @@ export default function Videos() {
     const { language } = useContext(LanguageContext);
 
     const videos = [
+        "https://www.youtube.com/embed/videoseries?si=YWTdlizL-90dRfC4&amp;list=OLAK5uy_lsACttOsC4qdlN_LPw942LO6KxTzLQl3c",
         "https://www.youtube.com/embed/ZXABlRk-PXI",
         "https://www.youtube.com/embed/mA1mjCzKDKU",
         "https://www.youtube.com/embed/h81OYCLoXIY",
@@ -53,9 +54,8 @@ export default function Videos() {
         "https://www.youtube.com/embed/T1p9X-W-K9g",
         "https://www.youtube.com/embed/ZzKBIORk_Wk",
         "https://www.youtube.com/embed/s1NTu6Ft30c",
-        "https://www.youtube.com/embed/v5FRxNfK7kE",
     ];
-    
+
     return (
         <>
             <div className="py-10" />
