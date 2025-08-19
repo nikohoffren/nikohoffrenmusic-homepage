@@ -41,9 +41,6 @@ export default function Videos() {
     const videos = [
         "https://www.youtube.com/embed/videoseries?si=YWTdlizL-90dRfC4&amp;list=OLAK5uy_lsACttOsC4qdlN_LPw942LO6KxTzLQl3c",
         "https://www.youtube.com/embed/ZXABlRk-PXI",
-        "https://www.youtube.com/embed/mA1mjCzKDKU",
-        "https://www.youtube.com/embed/h81OYCLoXIY",
-        "https://www.youtube.com/embed/Nkt2_k8jz28",
         "https://www.youtube.com/embed/2Xk-d-1jt70",
         "https://www.youtube.com/embed/5tusnfN2luE",
         "https://www.youtube.com/embed/T55DIK6Of1g",
